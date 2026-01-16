@@ -1,88 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Shishul Kumar Chandel | Web & Java Developer</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
 
-<header>
-  <h1>Shishul Kumar Chandel</h1>
-  <p>B.Tech CSE (3rd Year) | Web & Java Developer</p>
+  <header class="main-header">
+    <div class="header-container">
 
-  <div class="links">
-  </div>
-</header>
+      <!-- LEFT: NAME -->
+      <div class="header-left">
+        <h1>Shishul Kumar Chandel</h1>
+        <p>B.Tech CSE | Web & Java Developer</p>
+      </div>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am a B.Tech 3rd year Computer Science Engineering student with
-    intermediate knowledge of Web Development and Java.
-    I am actively looking for a Web / Java Developer Internship
-    where I can apply my skills and gain industry experience.
-  </p>
-</section>
+      <!-- MIDDLE: NAVIGATION -->
+      <nav class="header-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-<section>
-  <h2>Skills</h2>
-  <ul class="skills">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Java</li>
-    <li>JDBC</li>
-    <li>MySQL</li>
-    <li>Git & GitHub</li>
-  </ul>
-</section>
+      <!-- RIGHT: RESUME + SOCIAL -->
+      <div class="header-right">
+        <a href="resume.pdf" class="resume-btn" target="_blank">Resume</a>
 
-<section>
-  <h2>Projects</h2>
+        <a href="https://github.com/L-cyber-07" target="_blank" class="icon-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/shishul004" target="_blank" class="icon-link">LinkedIn</a>
+      </div>
 
-  <div class="project">
-    <h3>Student Management System</h3>
+    </div>
+  </header>
+
+  <section id="home" class="home-section">
+    <div class="home-bg">
+      <span class="blob blob1"></span>
+      <span class="blob blob2"></span>
+    </div>
+
+    <div class="home-wrapper">
+
+      <!-- LEFT CONTENT -->
+      <div class="home-content">
+        <h1>Hello, I’m <span>Shishul Kumar Chandel</span></h1>
+
+        <h3>
+          <span id="typing"></span>
+        </h3>
+
+        <p>
+          B.Tech CSE (3rd Year) student passionate about building
+          clean web applications and backend systems.
+        </p>
+
+        <div class="home-buttons">
+          <a href="resume.pdf" class="btn-primary" target="_blank">Download Resume</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="home-image">
+        <img src="image/homeprofile.png" alt="Shishul Kumar Chandel">
+      </div>
+
+    </div>
+
+    <!-- SCROLL INDICATOR -->
+    <div class="scroll-down">
+      <span></span>
+    </div>
+  </section>
+
+
+
+
+  <section class="about-section" id="about">
+    <div class="about-container">
+
+      <img src="image/profile.jpg" alt="Shishul Kumar Chandel" class="about-photo">
+
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I am a B.Tech 3rd year Computer Science Engineering student with
+          intermediate knowledge of Web Development and Java.
+          I am actively looking for a Web / Java Developer Internship
+          where I can apply my skills and gain industry experience.
+        </p>
+
+        <p>
+          I have hands-on experience in developing academic and personal projects
+          using HTML, CSS, JavaScript, Java, and MySQL. I am actively seeking an
+          internship opportunity where I can apply my technical skills, learn from
+          industry professionals, and grow as a software developer.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-grid-3x2">
+
+      <div class="skill-card">
+        <i class="fa-brands fa-html5"></i>
+        <h4>HTML</h4>
+        <p>Semantic structure and clean markup.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h4>CSS</h4>
+        <p>Layouts, responsive design, UI styling.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-js"></i>
+        <h4>JavaScript</h4>
+        <p>DOM manipulation and interactivity.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-java"></i>
+        <h4>Java</h4>
+        <p>Core Java and OOP concepts.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-database"></i>
+        <h4>MySQL</h4>
+        <p>Database design and queries.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-github"></i>
+        <h4>Git & GitHub</h4>
+        <p>Version control and collaboration.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-terminal"></i>
+        <h4>C</h4>
+        <p>Procedural programming and memory basics.</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-cubes"></i>
+        <h4>C++</h4>
+        <p>OOP concepts and STL containers.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-card">
+
+      <div class="project-overlay">
+        <h4>Alumni Management System</h4>
+        <p>
+          A web-based system to manage alumni records, communication,
+          and alumni-student interaction efficiently.
+        </p>
+        <span>Java • MySQL • HTML • CSS</span>
+      </div>
+
+      <div class="project-overlay">
+        <h4>Student Management System</h4>
+        <p>
+          Web application to manage student data with CRUD operations
+          using a structured database.
+        </p>
+        <span>Java • MySQL • HTML • CSS</span>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+
     <p>
-      Developed a web-based application using Java, JDBC, MySQL,
-      HTML, and CSS to manage student records with CRUD operations.
+      Email:
+      <a href="mailto:luckychandel914@gmail.com">
+        luckychandel914@gmail.com
+      </a>
     </p>
-  </div>
 
-  <div class="project">
-    <h3>Portfolio Website</h3>
     <p>
-      Designed and developed a responsive personal portfolio
-      website using HTML and CSS to showcase skills and projects.
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/shishul004" target="_blank">
+        linkedin.com/in/shishul004
+      </a>
     </p>
-  </div>
-
-</section>
-
-<section>
-  <h2>Contact</h2>
-
- 
-
-  <p>
-    Email:
-    <a href="mailto:luckychandel914@gmail.com">
-      luckychandel914@gmail.com
-    </a>
-  </p>
-
-  <p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/shishul004" target="_blank">
-      linkedin.com/in/shishul004
-    </a>
-  </p>
-</section>
+    <p>
+      GitHub:
+      <a href="https://github.com/L-cyber-07" target="_blank">
+        github.com/L-cyber-07
+      </a>
+    </p>
+  </section>
 
 
-<footer>
-  <p>© 2026 Shishul Kumar Chandel</p>
-</footer>
+  <footer>
+    <p>© 2027 Shishul Kumar Chandel</p>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
+
 </html>
